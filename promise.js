@@ -16,7 +16,7 @@ domain.addEventListener("input", async (e) => {
 
 const fetchIPAddress = (domain) => {
   return new Promise((resolve, reject) => {
-    fetch(`https://cloudflare-dns.com/dns-query?name=${domain}&type=A`, {
+    fetch(`https://cloudflare-dns.com/dns-query?name=${domain}`, {
       headers: {
         accept: "application/dns-json",
       },
